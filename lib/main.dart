@@ -11,10 +11,19 @@ class MeuApp extends StatelessWidget{
         appBar: AppBar(
           title: const Text('IMC Calculadora'),
           centerTitle: true,
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 120, 12, 124),
+          actions: [
+            IconButton(icon: Icon(Icons.refresh),
+            onPressed: () {},),
+          ],
         ),
-        body: const Center(
-          child: Text('Olá Mundo!'),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Icon( Icons.person_outlined, 
+            size: 170.0, 
+            color: Color.fromARGB(255, 120, 12, 124),)
+          ],
         ),
       ),
     );
