@@ -50,17 +50,20 @@ class MeuApp extends StatelessWidget{
              color: Color.fromARGB(255, 120, 12, 124),),
             buildTextField("Peso"),
             buildTextField("Altura"),
-            floatingActionButton: FloatingActionButtonLocation.centerDocked,
-            floatingActionButton: Container(
-              Padding: const EdgeInsets.all(10.0),
+            
+          ],
+         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: Container(
+              padding: const EdgeInsets.all(10.0),
+              width: 350,
+              height: 100,
               child: ElevatedButton(
               onPressed: () {},
               child: const Text('Verificar'),
+              style: ButtonStyle(textStyle:),
             ),
             )
-          ],
-          
-        ),
       ),
     );
   }
